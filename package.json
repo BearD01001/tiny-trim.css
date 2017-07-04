@@ -4,7 +4,7 @@
   "description": "Tiny trimming classes for Element, Bootstrap, etc.",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/gulp/bin/gulp.js build/gulpfile.dev.js",
+    "dev": "node node_modules/gulp/bin/gulp.js --gulpfile=build/gulpfile.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.5.0",
     "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
     "path": "^0.12.7"
   }
