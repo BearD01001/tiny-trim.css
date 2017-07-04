@@ -1,6 +1,219 @@
 /*! 
   tiny-trim.css
  */
-.class {
-  width: 200px!important
+.mt--15 {
+  margin-top: -15 px
+}
+.t--15 {
+  top: -15 px
+}
+.mt--10 {
+  margin-top: -10 px
+}
+.t--10 {
+  top: -10 px
+}
+.mt--5 {
+  margin-top: -5 px
+}
+.t--5 {
+  top: -5 px
+}
+.mt-0 {
+  margin-top: 0 px
+}
+.pt-0 {
+  padding-top: 0 px
+}
+.t-0 {
+  top: 0 px
+}
+.mt-5 {
+  margin-top: 5 px
+}
+.pt-5 {
+  padding-top: 5 px
+}
+.t-5 {
+  top: 5 px
+}
+.mt-10 {
+  margin-top: 10 px
+}
+.pt-10 {
+  padding-top: 10 px
+}
+.t-10 {
+  top: 10 px
+}
+.mt-15 {
+  margin-top: 15 px
+}
+.pt-15 {
+  padding-top: 15 px
+}
+.t-15 {
+  top: 15 px
+}
+.mr--15 {
+  margin-right: -15 px
+}
+.r--15 {
+  right: -15 px
+}
+.mr--10 {
+  margin-right: -10 px
+}
+.r--10 {
+  right: -10 px
+}
+.mr--5 {
+  margin-right: -5 px
+}
+.r--5 {
+  right: -5 px
+}
+.mr-0 {
+  margin-right: 0 px
+}
+.pr-0 {
+  padding-right: 0 px
+}
+.r-0 {
+  right: 0 px
+}
+.mr-5 {
+  margin-right: 5 px
+}
+.pr-5 {
+  padding-right: 5 px
+}
+.r-5 {
+  right: 5 px
+}
+.mr-10 {
+  margin-right: 10 px
+}
+.pr-10 {
+  padding-right: 10 px
+}
+.r-10 {
+  right: 10 px
+}
+.mr-15 {
+  margin-right: 15 px
+}
+.pr-15 {
+  padding-right: 15 px
+}
+.r-15 {
+  right: 15 px
+}
+.mb--15 {
+  margin-bottom: -15 px
+}
+.b--15 {
+  bottom: -15 px
+}
+.mb--10 {
+  margin-bottom: -10 px
+}
+.b--10 {
+  bottom: -10 px
+}
+.mb--5 {
+  margin-bottom: -5 px
+}
+.b--5 {
+  bottom: -5 px
+}
+.mb-0 {
+  margin-bottom: 0 px
+}
+.pb-0 {
+  padding-bottom: 0 px
+}
+.b-0 {
+  bottom: 0 px
+}
+.mb-5 {
+  margin-bottom: 5 px
+}
+.pb-5 {
+  padding-bottom: 5 px
+}
+.b-5 {
+  bottom: 5 px
+}
+.mb-10 {
+  margin-bottom: 10 px
+}
+.pb-10 {
+  padding-bottom: 10 px
+}
+.b-10 {
+  bottom: 10 px
+}
+.mb-15 {
+  margin-bottom: 15 px
+}
+.pb-15 {
+  padding-bottom: 15 px
+}
+.b-15 {
+  bottom: 15 px
+}
+.ml--15 {
+  margin-left: -15 px
+}
+.l--15 {
+  left: -15 px
+}
+.ml--10 {
+  margin-left: -10 px
+}
+.l--10 {
+  left: -10 px
+}
+.ml--5 {
+  margin-left: -5 px
+}
+.l--5 {
+  left: -5 px
+}
+.ml-0 {
+  margin-left: 0 px
+}
+.pl-0 {
+  padding-left: 0 px
+}
+.l-0 {
+  left: 0 px
+}
+.ml-5 {
+  margin-left: 5 px
+}
+.pl-5 {
+  padding-left: 5 px
+}
+.l-5 {
+  left: 5 px
+}
+.ml-10 {
+  margin-left: 10 px
+}
+.pl-10 {
+  padding-left: 10 px
+}
+.l-10 {
+  left: 10 px
+}
+.ml-15 {
+  margin-left: 15 px
+}
+.pl-15 {
+  padding-left: 15 px
+}
+.l-15 {
+  left: 15 px
 }

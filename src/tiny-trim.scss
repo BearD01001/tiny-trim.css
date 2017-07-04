@@ -1,0 +1,23 @@
+/*! 
+  tiny-trim.css
+ */
+
+@import 'config.scss';
+
+// For priorities have position attribute
+$pm-pos: (t: top, r: right, b: bottom, l: left);
+@each $k, $v in $pm-pos {
+    @for $i from -$tt-level through $tt-level {
+        $curr-val: $i * $tt-step;
+        // margin & padding
+        @each $tk, $tv in (m: margin, p: padding) {
+            .#{$tk}#{$k}-#{$curr-val} {
+                #{$tv}-#{$v}: $curr-val$tt-unit;
+            }
+        }
+        // top, right, bottom, right
+        .#{$k}-#{$curr-val} {
+            #{$v}: $curr-val$tt-unit
+        }
+    }
+}
