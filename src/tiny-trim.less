@@ -3,3 +3,11 @@
  */
 
 @import 'config.less';
+
+.ipt(@tt-pp: @tt-priority-promote) when (@tt-pp) { @ipt: ~' !important' }
+.ipt(@tt-pp: @tt-priority-promote) when (default()) { @ipt: ~'' }
+
+.class {
+  .ipt();
+  width: 200px @ipt
+}
