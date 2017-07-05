@@ -4,23 +4,45 @@
 
 @import 'config.scss';
 
-// For priorities have position attribute
-$pm-pos: (t: top, r: right, b: bottom, l: left);
-$min: if($tt-negative, -$tt-level, 0);
 $ipt: if($tt-priority-promote, '!important', '');
 
-@each $k, $v in $pm-pos {
-    @for $i from $min through $tt-level {
-        $curr-val: $i * $tt-step;
-        // margin & paddingmote
-        @each $tk, $tv in (m: margin, p: padding) {
-            .#{$tk}#{$k}-#{$curr-val} {
-                #{$tv}-#{$v}: $curr-val#{$tt-unit}#{$ipt}
-            }
-        }
-        // top, right, bottom, right
-        .#{$k}-#{$curr-val} {
-            #{$v}: $curr-val#{$tt-unit}#{$ipt}
+/* common loop props mixin */
+@mixin clp($prop-name-map, $prop-val-maps) {
+    @each $k, $v in $prop-val-maps {
+        .#{map-get($prop-name-map, 'abbr')}-#{$k} {
+            #{map-get($prop-name-map, 'name')}: $v#{$ipt}
         }
     }
 }
+
+@include clp((name: position, abbr: pos), (a: absolute, r: relative, s: static, f: fixed));
+@include clp((name: display, abbr: dp), (i: inline, b: block, n: none, ib: inline-block));
+@include clp((name: visibility, abbr: vs), (h: hidden, v: visible));
+@include clp((name: box-sizing, abbr: bs), (bb: border-box, cb: content-box));
+
+/* For priorities have position attribute */
+$pm-pos: (t: top, r: right, b: bottom, l: left);
+$min-level: if($tt-negative, -$tt-level, 0);
+@each $k, $v in $pm-pos {
+    @for $i from $min-level through $tt-level {
+        $curr-step: $i * $tt-step;
+        $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
+        @include clp((name: margin-#{$v}, abbr: m#{$k}), $curr-map);
+        @include clp((name: $v, abbr: $k), $curr-map);
+        @if($i >= 0) {
+            @include clp((name: padding-#{$v}, abbr: p#{$k}), $curr-map);
+        }
+    }
+}
+
+/* Others */
+.td-none {
+    text-decoration: none#{$ipt}
+}
+.bd-none {
+    border: none#{$ipt}
+}
+.wd-100 {
+    width: 100%#{$ipt}
+}
+/* End */
