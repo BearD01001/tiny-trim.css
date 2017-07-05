@@ -21,16 +21,18 @@ $ipt: if($tt-priority-promote, '!important', '');
 @include clp((name: box-sizing, abbr: bs), (bb: border-box, cb: content-box));
 
 /* For priorities have position attribute */
-$pm-pos: (t: top, r: right, b: bottom, l: left);
+$pos-maps: (t: top, r: right, b: bottom, l: left);
 $min-level: if($tt-negative, -$tt-level, 0);
-@each $k, $v in $pm-pos {
+@each $k, $v in $pos-maps {
     @for $i from $min-level through $tt-level {
         $curr-step: $i * $tt-step;
         $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
         @include clp((name: margin-#{$v}, abbr: m#{$k}), $curr-map);
+        @include clp((name: margin, abbr: m), $curr-map);
         @include clp((name: $v, abbr: $k), $curr-map);
         @if($i >= 0) {
             @include clp((name: padding-#{$v}, abbr: p#{$k}), $curr-map);
+            @include clp((name: padding, abbr: p), $curr-map);
         }
     }
 }
@@ -45,4 +47,5 @@ $min-level: if($tt-negative, -$tt-level, 0);
 .wd-100 {
     width: 100%#{$ipt}
 }
+
 /* End */
