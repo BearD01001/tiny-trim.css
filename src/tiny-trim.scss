@@ -7,19 +7,20 @@
 // For priorities have position attribute
 $pm-pos: (t: top, r: right, b: bottom, l: left);
 $min: if($tt-negative, -$tt-level, 0);
+$ipt: if($tt-priority-promote, '!important', '');
 
 @each $k, $v in $pm-pos {
     @for $i from $min through $tt-level {
         $curr-val: $i * $tt-step;
-        // margin & padding
+        // margin & paddingmote
         @each $tk, $tv in (m: margin, p: padding) {
             .#{$tk}#{$k}-#{$curr-val} {
-                #{$tv}-#{$v}: $curr-val#{$tt-unit}
+                #{$tv}-#{$v}: $curr-val#{$tt-unit}#{$ipt}
             }
         }
         // top, right, bottom, right
         .#{$k}-#{$curr-val} {
-            #{$v}: $curr-val#{$tt-unit}
+            #{$v}: $curr-val#{$tt-unit}#{$ipt}
         }
     }
 }
