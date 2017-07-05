@@ -1,14 +1,20 @@
 /*
   $tt-step
   For margin, padding, position (top, right, bottom and left properties)
-  The default value is 5 will be transformed into -15, -10, -5 0 5 10 15
+  The default value is 5 will be transformed into 0 5 10 15
  */
 $tt-step: 5;
 
 /*
+  $tt-negative
+  The result of $tt-step will be -15, -10, -5, 0, 5, 10, 15 while actived this value
+ */
+$tt-negative: false;
+
+/*
   $tt-level
   The times of $tt-step repeat multiple increase
-  The result of $tt-step will be -10, -5, 0, 5, 10 while this value changed to 2
+  The result of $tt-step will be 0, 5, 10, 15, 20, 25 while this value changed to 5
  */
 $tt-level: 3;
 
