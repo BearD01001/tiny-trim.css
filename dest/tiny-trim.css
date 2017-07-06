@@ -37,6 +37,42 @@
 .bs-cb {
   box-sizing: content-box
 }
+.of-h {
+  overflow: hidden
+}
+.of-v {
+  overflow: visible
+}
+.of-s {
+  overflow: scroll
+}
+.of-a {
+  overflow: auto
+}
+.ox-h {
+  overflow-x: hidden
+}
+.ox-v {
+  overflow-x: visible
+}
+.ox-s {
+  overflow-x: scroll
+}
+.ox-a {
+  overflow-x: auto
+}
+.oy-h {
+  overflow-y: hidden
+}
+.oy-v {
+  overflow-y: visible
+}
+.oy-s {
+  overflow-y: scroll
+}
+.oy-a {
+  overflow-y: auto
+}
 .mt-0 {
   margin-top: 0
 }
