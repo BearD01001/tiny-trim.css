@@ -20,6 +20,11 @@ $ipt: if($tt-priority-promote, '!important', '');
 @include clp((name: visibility, abbr: vs), (h: hidden, v: visible));
 @include clp((name: box-sizing, abbr: bs), (bb: border-box, cb: content-box));
 
+$of-value-maps: (h: hidden, v: visible, s: scroll, a: auto);
+@include clp((name: overflow, abbr: of), $of-value-maps);
+@include clp((name: overflow-x, abbr: ox), $of-value-maps);
+@include clp((name: overflow-y, abbr: oy), $of-value-maps);
+
 /* For priorities have position attribute */
 $pos-maps: (t: top, r: right, b: bottom, l: left);
 $min-level: if($tt-negative, -$tt-level, 0);
@@ -47,5 +52,4 @@ $min-level: if($tt-negative, -$tt-level, 0);
 .wd-100 {
     width: 100%#{$ipt}
 }
-
 /* End */
