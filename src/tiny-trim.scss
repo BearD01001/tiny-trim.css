@@ -33,13 +33,18 @@ $min-level: if($tt-negative, -$tt-level, 0);
         $curr-step: $i * $tt-step;
         $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
         @include clp((name: margin-#{$v}, abbr: m#{$k}), $curr-map);
-        @include clp((name: margin, abbr: mg), $curr-map);
         @include clp((name: $v, abbr: $k), $curr-map);
         @if($i >= 0) {
             @include clp((name: padding-#{$v}, abbr: p#{$k}), $curr-map);
-            @include clp((name: padding, abbr: pd), $curr-map);
         }
     }
+}
+
+@for $i from $min-level through $tt-level {
+    $curr-step: $i * $tt-step;
+    $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
+    @include clp((name: margin, abbr: m), $curr-map);
+    @include clp((name: padding, abbr: p), $curr-map);
 }
 
 /* Others */
