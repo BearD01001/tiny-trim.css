@@ -49,6 +49,8 @@ $min-level: if($tt-negative, -$tt-level, 0);
     @include clp((name: padding, abbr: p), $curr-map);
 }
 
+@include clp((name: text-align, abbr: ta), (l: left, r: right, c: center, j: justify, i: initial));
+
 /* Others */
 .td-none {
     text-decoration: none#{$ipt}

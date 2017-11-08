@@ -243,6 +243,21 @@
 .p-15 {
   padding: 15px
 }
+.ta-l {
+  text-align: left
+}
+.ta-r {
+  text-align: right
+}
+.ta-c {
+  text-align: center
+}
+.ta-j {
+  text-align: justify
+}
+.ta-i {
+  text-align: initial
+}
 .td-none {
   text-decoration: none
 }
