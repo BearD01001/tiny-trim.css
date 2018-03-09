@@ -1,6 +1,6 @@
 {
-  "name": "tiny-trim",
-  "version": "0.0.1",
+  "name": "tiny-trim.css",
+  "version": "0.1.9",
   "description": "Tiny trimming classes for Element, Bootstrap, etc.",
   "main": "index.js",
   "scripts": {
