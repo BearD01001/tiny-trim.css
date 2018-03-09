@@ -5,9 +5,26 @@
 ### TOC
 
 - [tiny-trim.css](#tiny-trimcss)
-    - [TOC](#toc)
-    - [Utils sheet](#utils-sheet)
-    - [Custom](#custom)
+        - [TOC](#toc)
+        - [Use](#use)
+        - [Utils sheet](#utils-sheet)
+        - [Custom](#custom)
+
+### Use
+
+1.  Install from npm package.
+
+```bash
+$ npm i tiny-trim.css -S
+```
+
+2.  Import to project.
+
+```js
+import 'tiny-trim.css'
+```
+
+3.  Enjoy it!
 
 ### Utils sheet
 
