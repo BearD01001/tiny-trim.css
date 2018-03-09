@@ -22,31 +22,31 @@ $ipt: if($tt-priority-promote, '!important', '');
 @include clp((name: visibility, abbr: vs), (h: hidden, v: visible));
 @include clp((name: box-sizing, abbr: bs), (bb: border-box, cb: content-box));
 
-$of-value-maps: (h: hidden, v: visible, s: scroll, a: auto);
-@include clp((name: overflow, abbr: of), $of-value-maps);
-@include clp((name: overflow-x, abbr: ox), $of-value-maps);
-@include clp((name: overflow-y, abbr: oy), $of-value-maps);
+$overflow-value-map: (h: hidden, v: visible, s: scroll, a: auto);
+@include clp((name: overflow, abbr: of), $overflow-value-map);
+@include clp((name: overflow-x, abbr: ox), $overflow-value-map);
+@include clp((name: overflow-y, abbr: oy), $overflow-value-map);
 
 /* For priorities have position attribute */
 $pos-maps: (t: top, r: right, b: bottom, l: left);
 $min-level: if($tt-negative, -$tt-level, 0);
 @each $k, $v in $pos-maps {
     @for $i from $min-level through $tt-level {
-        $curr-step: $i * $tt-step;
-        $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
-        @include clp((name: margin-#{$v}, abbr: m#{$k}), $curr-map);
-        @include clp((name: $v, abbr: $k), $curr-map);
+        $current-step: $i * $tt-step;
+        $current-map: ($current-step: #{$current-step}#{$tt-unit});
+        @include clp((name: margin-#{$v}, abbr: m#{$k}), $current-map);
+        @include clp((name: $v, abbr: $k), $current-map);
         @if($i >= 0) {
-            @include clp((name: padding-#{$v}, abbr: p#{$k}), $curr-map);
+            @include clp((name: padding-#{$v}, abbr: p#{$k}), $current-map);
         }
     }
 }
 
 @for $i from $min-level through $tt-level {
-    $curr-step: $i * $tt-step;
-    $curr-map: ($curr-step: #{$curr-step}#{$tt-unit});
-    @include clp((name: margin, abbr: m), $curr-map);
-    @include clp((name: padding, abbr: p), $curr-map);
+    $current-step: $i * $tt-step;
+    $current-map: ($current-step: #{$current-step}#{$tt-unit});
+    @include clp((name: margin, abbr: m), $current-map);
+    @include clp((name: padding, abbr: p), $current-map);
 }
 
 @include clp((name: text-align, abbr: ta), (l: left, r: right, c: center, j: justify, i: initial));
