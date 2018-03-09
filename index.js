@@ -1,3 +1,3 @@
-var tinyTrim = require('dist/tiny-trim.min.css')
+var tinyTrim = require('./dist/tiny-trim.min.css')
 
 module.exports = tinyTrim
