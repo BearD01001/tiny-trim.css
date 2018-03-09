@@ -14,15 +14,15 @@
 
 1.  Install from npm package.
 
-```bash
-$ npm i tiny-trim.css -S
-```
+    ```bash
+    $ npm i tiny-trim.css -S
+    ```
 
 2.  Import to project.
 
-```js
-import 'tiny-trim.css'
-```
+    ```js
+    import 'tiny-trim.css'
+    ```
 
 3.  Enjoy it!
 
@@ -136,21 +136,21 @@ import 'tiny-trim.css'
 
 1.  Clone this repository.
 
-```bash
-$ git clone https://github.com/BearD01001/tiny-trim.css.git
-```
+    ```bash
+    $ git clone https://github.com/BearD01001/tiny-trim.css.git
+    ```
 
 2.  Install dependencies.
 
-```bash
-$ cd tiny-trim.css/ && npm i
-```
+    ```bash
+    $ cd tiny-trim.css/ && npm i
+    ```
 
 3.  Run building task.
 
-```bash
-$ npm start
-```
+    ```bash
+    $ npm start
+    ```
 
 4.  Modify `src/config.scss` or `src/tiny-trim.scss`.
 5.  Got your own custom files in the `dist/` directory.
