@@ -1,6 +1,6 @@
 {
   "name": "tiny-trim.css",
-  "version": "0.1.9",
+  "version": "0.1.12",
   "description": "Tiny trimming classes for Element, Bootstrap, etc.",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/BearD01001/tiny-trim.css.git"
   },
-  "keywords": [
-    "CSS"
-  ],
+  "keywords": ["CSS"],
   "author": "BearD01001",
   "license": "MIT",
   "bugs": {
